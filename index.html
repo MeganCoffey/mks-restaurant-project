@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">              
         <!-- Google Fonts -->
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
-        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
         <!-- Foundation CSS -->
         <!-- TODO link to foundation's normalize.css -->
         <link rel="stylesheet" href="css/normalize.css" />  
@@ -57,31 +57,25 @@
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
 
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
-                    <div class="column large-4">
+                <div class="location column large-4">
                         <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
                         at the Radisson Hotel
                         111 east cesar chavez
                         austin, texas 78701
-                        512.478.2291
-                    </div>    
+                        512.478.2291 
                 </div>
 
-                <div class="map">
-                    <div class="column large-4">
+                <div class="map column large-4">
                     <a href="http://goo.gl/maps/qgnVW" target="_blank"><img src="images/map.png"></a>
-                    <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
-                    </div>                 
+                    <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->               
                 </div>
 
-                <div class="hours">
-                    <div class="column large-4">
+                <div class="hours column large-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
                     breakfast: 6:30–11am
                     lunch: 11am–3pm
                     limited menu: 3–5pm
                     dinner: 5–10pm
-                    </div>  
                 </div>
             </div>
         </section>
@@ -103,33 +97,48 @@
             The menu-action class will be used in the JavaScript later. -->
 
                 <div id="menu-action-breakfast" class="menu-section column small-2 menu-action">
-                    <h3>Breakfast</h3>  
+                    <h3>
+                        <a href="#">
+                            Breakfast
+                        </a> 
+                    </h3> 
                 </div> 
+
                 <div id="menu-action-lunch" class="menu-section column small-2 menu-action">
-                    <a href="#">
-                        <h3>Lunch</h3>  
-                    </a>
+                        <h3>
+                        <a href="#">
+                            Lunch
+                        </a>
+                        </h3>  
                 </div> 
-                <div id="menu-action-dinner" class="menu-section column small-2 menu-action">
-                    <a href="#">
-                        <h3>Dinner</h3> 
-                    </a>      
+                <div id="menu-action-dinner" class="menu-section column small-2 menu-action is-active">
+                        <h3>
+                        <a href="#">
+                            Dinner
+                        </a>      
+                        </h3> 
                 </div> 
                 <div id="menu-action-dessert" class="menu-section column small-2 menu-action">
-                    <a href="#">
-                    <h3>Dessert</h3>
-                    </a>
+                    <h3>
+                        <a href="#">
+                            Dessert
+                        </a>
+                    </h3>
                 </div> 
                 <div id="menu-action-cocktails" class="menu-section column small-2 menu-action">
-                    <a href="#">
-                    <h3>Cocktails</h3> 
-                    </a>
+                    <h3>
+                        <a href="#">
+                            Cocktails
+                        </a>
+                    </h3> 
                 </div> 
                 <div id="menu-action-wine" class="menu-section column small-2 menu-action">
-                    <a href="#">
-                    <h3>Wine</h3>
-                    </a>
-                </div>     
+                    <h3>
+                        <a href="#">
+                            Wine
+                        </a>
+                    </h3>
+                </div>  
             </div>    
  
             <!-- TODO add a foundation row to wrap around this content -->
@@ -143,52 +152,52 @@
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
                             <!-- TODO inside each div.menu-item, there should be a div.menu-item-name, a p.menu-item-description, and a div.menu-item-price. -->
-                             <div class="menu-items">
+                             <div class="menu-item">
                                 <div class="menu-item-name">malpeque oyster</div>
                                     <p class="menu-item-description"> prince edward island, canada</p>
-                                    <div class="menu-item-price">, $3</div>
+                                    <div class="menu-item-price"> 3</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">bluepoint oyster</div>
                                     <p class="menu-item-description"> long island sound</p>
-                                    <div class="menu-item-price">, $3</div>
+                                    <div class="menu-item-price"> 3</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">seafood coctel</div>
                                     <p class="menu-item-description">shrimp, avocado, tomato, cucumber, onion</p>
-                                    <div class="menu-item-price">, $11</div>
+                                    <div class="menu-item-price"> 11</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">raw bass</div>
                                     <p class="menu-item-description">avocado, lime, guajillo</p>
-                                    <div class="menu-item-price">, $11</div>
+                                    <div class="menu-item-price"> 11</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">vuelve a la vida</div>
                                     <p class="menu-item-description">squid, shrimp, salmon, spicy tomato, celery</p>
-                                    <div class="menu-item-price">, $9</div>
+                                    <div class="menu-item-price"> 9</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">ceviche traditional</div>
                                     <p class="menu-item-description">avocado, tomato, jalapeño</p>
-                                    <div class="menu-item-price">, $9</div>
+                                    <div class="menu-item-price"> 9</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">hamachi</div>
                                     <p class="menu-item-description">“horchata”, orange</p>
-                                    <div class="menu-item-price">, $9</div>
+                                    <div class="menu-item-price"> 9</div>
                                 </div>
 
-                                 <div class="menu-items">
+                                 <div class="menu-item">
                                     <div class="menu-item-name">vegan ceviche </div>
                                     <p class="menu-item-description">chayote, cauliflower, beet, orange</p>
-                                    <div class="menu-item-price">, $8</div>
+                                    <div class="menu-item-price"> 8</div>
                                 </div> 
 
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
@@ -203,55 +212,55 @@
                                 <div class="menu-item">
                                     <div class="menu-item-name">carne asada</div>
                                     <p class="menu-item-description">flank steak, grilled onions, “pico de gallo”</p>
-                                    <div class="menu-item-price">19</div>
+                                    <div class="menu-item-price">  19</div>
                                 </div>   
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">grilled hen</div>
                                     <p class="menu-item-description">cauliflower, pickle red onions, salsa verde</p>
-                                    <div class="menu-item-price">16</div>
+                                    <div class="menu-item-price">  16</div>
                                 </div>   
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">lamb en mole</div>
                                     <p class="menu-item-description">poblano, chayote, tomatoes, raisins</p>
-                                    <div class="menu-item-price">22</div>
+                                    <div class="menu-item-price">  22</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">blade steak al pastor</div>
                                     <p class="menu-item-description">charred tomato, radish, onion</p>
-                                    <div class="menu-item-price">22</div>
+                                    <div class="menu-item-price">  22</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">striped bass</div>
                                     <p class="menu-item-description">hominy, mushrooms, chard, hoja santa, guajillo</p>
-                                    <div class="menu-item-price">23</div>
+                                    <div class="menu-item-price">  23</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">salmon veracruz</div>
                                     <p class="menu-item-description">tomato, onion, peppers, capers, olives</p>
-                                    <div class="menu-item-price">19</div>
+                                    <div class="menu-item-price">  19</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">herb crusted mahi mahi</div>
                                     <p class="menu-item-description">salsa negra, pineapple, turnips, scallion</p>
-                                    <div class="menu-item-price">22</div>
+                                    <div class="menu-item-price">  22</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">grilled shrimp al mojo de ajo</div>
                                     <p class="menu-item-description">garlic, lime, tomato, tequila, greens, coronas</p>
-                                    <div class="menu-item-price">21</div>
+                                    <div class="menu-item-price">  21</div>
                                 </div> 
 
                                 <div class="menu-item">
                                     <div class="menu-item-name">oak grilled filet</div>
                                     <p class="menu-item-description">“rajas”, pasilla red wine reduction</p>
-                                    <div class="menu-item-price">36</div>
+                                    <div class="menu-item-price">  36</div>
                                 </div>    
 
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
@@ -263,19 +272,24 @@
 
         <!-- Social media -->
         <section class="contact">
-
+        <div class="row">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? -->
 
                 <!-- TODO for each of these 3 divs, add foundation columns so that they sit side by side. make them stack at small screen sizes. -->
 
-                <div class="email">
+                <div class="email column small-4">
                     <h5>Email</h5>
                     <!-- TODO make this an email link -->
-                    info@chavez-austin.com
+                    <a href="mailto:info@chavez-austin.com" target="top">info@chavez-austin.com</a>
                 </div>
 
-                <div class="social">
+                <div class="social column small-4">
                     <h5>Social Media</h5>
+                    <div class="social-links">
+                        <a href="http://facebook.com/ChavezATX" target="_blank"><img src="images/facebook.png"></a>
+                        <a href="http://twitter.com/ChavezATX" target="_blank"><img src="images/twitter.png"></a>
+                        <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
+                    </div>    
                     <!-- TODO write a div.social-links. -->
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
@@ -286,7 +300,7 @@
                 <div class="press columns small-4">
                     <h5>Press Inquiries</h5>
                     <!-- TODO make this an email link -->
-                    press@chavezrestaurant.com
+                    <a href="mailto:press@chavezrestaurant.com" target="top">press@chavezrestaurant.com</a>
                 </div>
 
             </div>
@@ -297,21 +311,26 @@
         <!-- JavaScripts -->
 
         <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/vendor/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.orbit.js"></script>
 
         <!-- Foundation JS -->
-        <script src="/js/foundation.min.js"></script>
         <script>
             $(document).foundation();
         </script>
 
         <!-- Slides.js -->
-        <!-- TODO link to the slides.min.js file -->
         <!-- TODO write the .slidesjs() code to make the slideshow work -->
+        <script src="js/jquery.slides.js"></script>
+       <script>
+        $(function(){
+              $("#slides").slidesjs({
+                width: 940,
+                height: 528
+              });
+            });
+        </script>
 
 
     </body>
