@@ -1,18 +1,22 @@
 /* ---------------------------------------------- */
 /* Styles --------------------------------------- */
 /* ---------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Bitter);
 
 body {
     margin: 0;
     /* TODO use the Google Font 'Bitter' */
+    font-family: 'Bitter', serif;
     font-size: 100%;
 }
 
 div, h1, h2, h3, h4, h5, h6, p, ul, ol, a {
+    font-family: 'Bitter', serif;
     /* TODO because we are using Foundation, we have to override Foundation's default font family. Use the Google Font 'Bitter' here. */
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: #fffdf0;
     /* TODO make the font color of all our headers #fffdf0 */
 }
 
@@ -23,19 +27,26 @@ h1, h2, h3, h4, h5, h6 {
 header {}
 
 header h1 {
+    font-size: 4.5em;
+    text-shadow: rgba(34, 28, 18,.75);
     /* TODO make the font size larger than Foundation's default; I uesd 4.5em */
     /* TODO add a text-shadow on the h1 using rgba(34, 28, 18,.75) */
 }
 
 header .tagline h4 {
+    font-style: normal on all headers!;
+    text-shadow: rgba(34, 28, 18,.75);
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
     /* TODO add the same text-shadow */
 }
 
 header .tagline {
     /* TODO center the text */
+    text-align: center;
     background: rgba(34, 28, 18,.5); /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
+    padding: 20px;
+    width: 100%;
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
     /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
 }
@@ -59,6 +70,9 @@ section {
 /* ---------------------------------------------- */
 
 .address {
+    background-color: #221c12;
+    color: #fffdf0;
+    text-align: center;
     /* TODO give this section a background of #221c12 and a color of #fffdf0. make the text centered */
 }
 
@@ -77,6 +91,9 @@ section {
 /* ---------------------------------------------- */
 
 .menu {
+    color: #221c12;
+    background-color: #fffdf0;
+    padding-bottom: 50px;
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
 }
 
@@ -86,8 +103,8 @@ section {
 
 .menu h2, .menu h3, .menu h4 {
     /* TODO give these headers a color of #221c12 */
+    color: #221c12;
 }
-
 
 /* TODO center the text of the h2 and menu-section */
 
@@ -110,6 +127,9 @@ section {
     /* TODO give each menu item some bottom margin */
 }
 
+.menu-item-description, .menu-item-price {
+    display: inline;
+}
 /* TODO style the menu-item-name to be bold */
 
 /* TODO style the menu-item-description to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
